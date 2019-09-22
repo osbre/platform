@@ -14,4 +14,25 @@ interface UserInterface
      * @return IteratorAggregate
      */
     public function getRoles();
+
+    /**
+     * Display name.
+     *
+     * @return string
+     */
+    public function getNameTitle() : string;
+
+    /**
+     * Display sub.
+     *
+     * @return string
+     */
+    public function getSubTitle() : ?string;
+
+    /**
+     * Display avatar.
+     *
+     * @return string
+     */
+    public function getAvatar(): ?string;
 }

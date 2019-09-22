@@ -153,7 +153,7 @@ class User extends Authenticatable implements UserInterface
      *
      * @return string
      */
-    public function getAvatar()
+    public function getAvatar(): string
     {
         $hash = md5(strtolower(trim($this->email)));
 
