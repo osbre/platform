@@ -22,7 +22,7 @@ trait CanSee
      *
      * @return $this
      */
-    public function canSee(bool $value): self
+    public function canSee($value): self
     {
         $this->display = $value;
 
